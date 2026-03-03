@@ -56,7 +56,13 @@
 	// 		},
 	// 	],
 	// },
-
+	{
+		path: '/quan-ly-san-pham',
+		name: 'Quản lý sản phẩm',
+		icon: 'shopping',
+		component: './QuanLySanPham',
+	},
+	
 	{
 		path: '/notification',
 		routes: [
