@@ -15,7 +15,18 @@
 			},
 		],
 	},
-
+	{
+		path: '/quan-ly-don-hang',
+		name: 'Quản lý đơn hàng',
+		icon: 'shoppingCart',
+		component: './QuanLyDonHang',
+	},
+	{
+		path: '/thong-ke',
+		name: 'Thống kê',
+		icon: 'barChart',
+		component: './ThongKe',
+	},
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
@@ -42,7 +53,12 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
-
+    {
+		path: '/keo_bua_bao',
+		name: 'Oẳn Tù Tì',
+		component: './OanTuTi',
+	},
+	
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
@@ -62,7 +78,13 @@
 		icon: 'shopping',
 		component: './QuanLySanPham',
 	},
-	
+	{
+		path: '/randomnumber',
+		name: "Game Random Number",
+		icon: 'question',
+		component: './RandomNumber',
+
+	},
 	{
 		path: '/notification',
 		routes: [
