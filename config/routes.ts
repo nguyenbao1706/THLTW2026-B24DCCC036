@@ -59,32 +59,6 @@
 		component: './OanTuTi',
 	},
 	{
-        path: '/de_thi',
-        name: 'Đề thi',
-        routes: [
-           {
-              path: '/de_thi/khoi_kien_thuc',
-              name: 'Khối kiến thức',
-              component: './DeThi/KhoiKienThuc',
-           },
-           {
-              path: '/de_thi/mon_hoc',
-              name: 'Môn học',
-              component: './DeThi/MonHoc',
-           },
-           {
-              path: '/de_thi/cau_hoi',
-              name: 'Câu hỏi',
-              component: './DeThi/CauHoi',
-           },
-           {
-              path: '/de_thi/de_thi',
-              name: 'Tạo đề',
-              component: './DeThi/index', 
-           },
-        ],
-    },
-	{
         path: '/dat_lich',
         name: 'dat_lich',
         routes: [
