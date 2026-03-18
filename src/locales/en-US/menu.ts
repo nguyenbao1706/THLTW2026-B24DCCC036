@@ -4,7 +4,6 @@ export default {
   'menu.account.center': 'Cá nhân',
   'menu.Dashboard': 'Trang chủ',
   'menu.News': 'Tin tức',
-  'menu.Game': 'Oẳn Tù Tì',
   'menu.dat_lich': 'Đặt lịch',
   'menu.dat_lich.nhan_vien': 'Nhân viên',
   'menu.dat_lich.dich_vu': 'Dịch vụ',

@@ -53,11 +53,6 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
-    {
-		path: '/keo_bua_bao',
-		name: 'Oẳn Tù Tì',
-		component: './OanTuTi',
-	},
 	{
         path: '/dat_lich',
         name: 'dat_lich',
