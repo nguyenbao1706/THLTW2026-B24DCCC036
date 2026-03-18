@@ -84,6 +84,37 @@
            },
         ],
     },
+	{
+        path: '/dat_lich',
+        name: 'dat_lich',
+        routes: [
+          {
+              path: '/dat_lich/nhan_vien',
+              name: 'nhan_vien',
+              component: './DatLich/NhanVien',
+          },
+          {
+              path: '/dat_lich/dich_vu',
+              name: 'dich_vu',
+              component: './DatLich/DichVu',
+          },
+          {
+              path: '/dat_lich/lich_hen',
+              name: 'lich_hen',
+              component: './DatLich/LichHen',
+          },
+          {
+              path: '/dat_lich/danh_gia',
+              name: 'danh_gia',
+              component: './DatLich/DanhGia',
+          },
+          {
+              path: '/dat_lich/thong_ke',
+              name: 'thong_ke',
+              component: './DatLich/ThongKe',
+          },
+      ],
+    },
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
