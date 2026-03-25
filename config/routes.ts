@@ -53,36 +53,19 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
-	{
-        path: '/dat_lich',
-        name: 'dat_lich',
-        routes: [
-          {
-              path: '/dat_lich/nhan_vien',
-              name: 'nhan_vien',
-              component: './DatLich/NhanVien',
-          },
-          {
-              path: '/dat_lich/dich_vu',
-              name: 'dich_vu',
-              component: './DatLich/DichVu',
-          },
-          {
-              path: '/dat_lich/lich_hen',
-              name: 'lich_hen',
-              component: './DatLich/LichHen',
-          },
-          {
-              path: '/dat_lich/danh_gia',
-              name: 'danh_gia',
-              component: './DatLich/DanhGia',
-          },
-          {
-              path: '/dat_lich/thong_ke',
-              name: 'thong_ke',
-              component: './DatLich/ThongKe',
-          },
-      ],
+    {
+    path: '/',
+    component: '@/layouts/BasicLayout',
+    routes: [
+      { path: '/', redirect: '/so-van-bang' },
+
+      { path: '/so-van-bang', component: './QuanLi/SoVanBang' },
+      { path: '/quyet-dinh', component: './QuanLi/QuyetDinh' },
+      { path: '/cau-hinh', component: './QuanLi/CauHinh' },
+      { path: '/van-bang', component: './QuanLi/VanBang' },
+      { path: '/tra-cuu', component: './QuanLi/TraCuu' },
+    ],
+  
     },
 	// DANH MUC HE THONG
 	// {
