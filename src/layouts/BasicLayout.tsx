@@ -1,29 +1,39 @@
 import { Layout, Menu } from 'antd';
-import { history } from 'umi';
+import {
+  TeamOutlined,
+  FormOutlined,
+  UserOutlined,
+  BarChartOutlined,
+} from '@ant-design/icons';
+import { history, useLocation } from 'umi';
 
-const { Header, Content } = Layout;
+const { Sider, Content } = Layout;
 
 export default (props: any) => {
+  const location = useLocation();
+
+  const menuItems = [
+    { key: '/clb', icon: <TeamOutlined />, label: 'CLB' },
+    { key: '/dang-ky', icon: <FormOutlined />, label: 'Đăng ký' },
+    { key: '/thanh-vien', icon: <UserOutlined />, label: 'Thành viên' },
+    { key: '/bao-cao', icon: <BarChartOutlined />, label: 'Báo cáo' },
+  ];
+
   return (
-    <Layout>
-      <Header>
+    <Layout style={{ minHeight: '100vh' }}>
+      <Sider>
         <Menu
           theme="dark"
-          mode="horizontal"
+          mode="inline"
+          selectedKeys={[location.pathname]}
+          items={menuItems}
           onClick={(e) => history.push(e.key)}
-          items={[
-            { key: '/so-van-bang', label: 'Sổ văn bằng' },
-            { key: '/quyet-dinh', label: 'Quyết định' },
-            { key: '/cau-hinh', label: 'Cấu hình' },
-            { key: '/van-bang', label: 'Văn bằng' },
-            { key: '/tra-cuu', label: 'Tra cứu' },
-          ]}
         />
-      </Header>
+      </Sider>
 
-      <Content style={{ padding: 20 }}>
-        {props.children}
-      </Content>
+      <Layout>
+        <Content style={{ margin: 16 }}>{props.children}</Content>
+      </Layout>
     </Layout>
   );
 };

@@ -57,16 +57,15 @@
     path: '/',
     component: '@/layouts/BasicLayout',
     routes: [
-      { path: '/', redirect: '/so-van-bang' },
-
-      { path: '/so-van-bang', component: './QuanLi/SoVanBang' },
-      { path: '/quyet-dinh', component: './QuanLi/QuyetDinh' },
-      { path: '/cau-hinh', component: './QuanLi/CauHinh' },
-      { path: '/van-bang', component: './QuanLi/VanBang' },
-      { path: '/tra-cuu', component: './QuanLi/TraCuu' },
+      { path: '/', redirect: '/clb' },
+      { path: '/clb', component: './CLB' },
+      { path: '/dang-ky', component: './DangKy' },
+      { path: '/thanh-vien', component: './ThanhVien' },
+      { path: '/bao-cao', component: './BaoCao' },
     ],
-  
-    },
+
+   },
+
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
