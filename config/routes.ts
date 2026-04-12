@@ -57,14 +57,12 @@
     path: '/',
     component: '@/layouts/BasicLayout',
     routes: [
-      { path: '/', redirect: '/clb' },
-      { path: '/clb', component: './CLB' },
-      { path: '/dang-ky', component: './DangKy' },
-      { path: '/thanh-vien', component: './ThanhVien' },
-      { path: '/bao-cao', component: './BaoCao' },
+      { path: '/', component: './Home' },
+      { path: '/planner', component: './Planner' },
+      { path: '/budget', component: './Budget' },
+      { path: '/admin', component: './Admin' },
     ],
-
-   },
+  },
 
 	// DANH MUC HE THONG
 	// {
