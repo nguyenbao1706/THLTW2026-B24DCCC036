@@ -15,20 +15,14 @@
 			},
 		],
 	},
-	{
-		path: '/quan-ly-don-hang',
-		name: 'Quản lý đơn hàng',
-		icon: 'shoppingCart',
-		component: './QuanLyDonHang',
-	},
+	
 	{
 		path: '/thong-ke',
 		name: 'Thống kê',
 		icon: 'barChart',
 		component: './ThongKe',
 	},
-	///////////////////////////////////
-	// DEFAULT MENU
+	
 	{
 		path: '/dashboard',
 		name: 'Dashboard',
@@ -53,16 +47,19 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
-    {
+    
+  {
     path: '/',
     component: '@/layouts/BasicLayout',
     routes: [
-      { path: '/', component: './Home' },
-      { path: '/planner', component: './Planner' },
-      { path: '/budget', component: './Budget' },
-      { path: '/admin', component: './Admin' },
+      { path: '/', redirect: '/order' },
+
+      { path: '/order', component: '@/pages/Order' },
+      { path: '/customer', component: '@/pages/Customer' },
+      { path: '/product', component: '@/pages/Product' },
     ],
   },
+
 
 	// DANH MUC HE THONG
 	// {
