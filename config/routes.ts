@@ -58,7 +58,37 @@
       { path: '/customer', component: '@/pages/Customer' },
       { path: '/product', component: '@/pages/Product' },
     ],
+},
+{
+    path: '/',
+    component: '@/layouts/BasicLayout',
+    routes: [
+      { path: '/', redirect: '/dashboard' },
+
+      { path: '/dashboard', component: '@/pages/Dashboard' },
+      { path: '/workout', component: '@/pages/Workout' },
+      { path: '/health', component: '@/pages/Health' },
+      { path: '/goal', component: '@/pages/Goal' },
+      { path: '/exercise', component: '@/pages/Exercise' },
+
+      { component: '@/pages/404' },
+    ],
   },
+  {
+    path: '/',
+    component: '@/layouts/BasicLayout',
+    routes: [
+      { path: '/', redirect: '/dashboard' },
+
+      { path: '/dashboard', component: '@/pages/Dashboard' },
+      { path: '/kanban', component: '@/pages/Kanban' },
+      { path: '/task', component: '@/pages/Task' },
+
+      { component: '@/pages/404' },
+    ],
+  },
+  
+  
 
 
 	// DANH MUC HE THONG
