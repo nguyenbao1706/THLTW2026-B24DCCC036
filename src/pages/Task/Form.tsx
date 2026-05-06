@@ -24,7 +24,7 @@ export default ({ open, setOpen }) => {
   };
 
   return (
-    <Modal open={open} onOk={handleOk} onCancel={() => setOpen(false)}>
+    <Modal visible={open} onOk={handleOk} onCancel={() => setOpen(false)}>
       <Form form={form}>
         <Form.Item name="title" rules={[{ required: true }]}>
           <Input placeholder="Tên task" />
